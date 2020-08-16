@@ -1,0 +1,124 @@
+.header {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.footer {
+  text-align: center;
+  background-color: #efefef;
+  padding-bottom: 20px;
+}
+
+.numberpad {
+  display: flex;
+  flex-direction: row;
+  background: #efefef;
+  border-top: 2px solid #bfbfbf;
+}
+
+.numpad-btns {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+}
+
+.numpad-btns button {
+  margin: 10px 0px;
+  display: inline-block;
+  padding: 10px 30px;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #72c3dc;
+  border: none;
+  border-radius: 6px;
+  box-shadow: 0 5px #2b8ead;
+}
+
+.numpad-btns button:active {
+  transform: translateY(4px);
+}
+
+.numberpad-keys {
+  list-style-type: none;
+  padding: 0px;
+  list-style-type: none;
+  padding: 0px;
+  flex-grow: 3;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 0;
+  font-size: 18px;
+}
+
+.numberpad-keys li {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 33%;
+  text-align: center;
+  box-sizing: border-box;
+  background: azure;
+  padding: 13%;
+  font-size: 10vw;
+  color: #ffffff;
+}
+
+.bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: gray;
+}
+.number {
+  position: absolute;
+}
+
+@media only screen and (max-width: 959px) {
+  .header {
+    padding: 15px;
+    background-color: #333333;
+    color: #ffffff;
+  }
+
+  .footer {
+    background-color: transparent;
+  }
+
+  .numberpad {
+    flex-direction: column-reverse;
+    background-color: transparent;
+    border-top: 0px;
+  }
+
+  .numpad-btns {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+  }
+
+  .numpad-btns button {
+    margin: 0px 4px;
+  }
+
+  .numberpad-keys li {
+    margin-top: 5px;
+    background-color: #efefef;
+    width: 100%;
+    font-size: 1em;
+    padding: 8%;
+    color: #000000;
+  }
+
+  .bg {
+    width: 4%;
+  }
+}
